@@ -67,10 +67,10 @@ def start_training(char_name: str, char_class: str) -> str:
 
 def choice_char_class() -> str:
     """Выбор класса персонажа."""
-    approve_choice = ''
-    char_class = ''
+    approve_choice: str = ''
+    char_class: str = ''
     while approve_choice != 'y':
-        char_class: str = input(
+        char_class = input(
             'Введи название персонажа, за которого хочешь играть: Воитель '
             '— warrior, Маг — mage, Лекарь — healer: ')
         if char_class == 'warrior':
